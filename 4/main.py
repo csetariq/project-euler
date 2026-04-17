@@ -15,7 +15,7 @@ def main():
     max_j = 0
     max_palindrome = 0
     for i in range(10, n):
-        for j in range(10, n):
+        for j in range(i, n):
             product = i * j
             if is_palindrome(str(product)):
                 if product > max_palindrome:
